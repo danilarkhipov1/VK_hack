@@ -3,8 +3,7 @@
 Разработать модель машинного обучения, 
 которая будет предсказывать пол пользователя соцсетей.
 
-Project Organization
-------------
+## Project Organization
     ├── README.md
     ├── data            <- Папка с файлами из датасета
     ├── experiments     <- Папка с экспериментальными ноутбуками
@@ -12,15 +11,24 @@ Project Organization
     └── hack_vk_2.ipynb <- Файл с обучением модели 
 
 
+## Участники группы:
 
-Описание датасета
+| Участник      |            Почта               |         Роль         |
+|:--------------|:------------------------------:|:--------------------:|
+| Попова Илона  |     ilona-u@mail.ru        |    Лидер проекта     |
+| Максимова Наталья |       Natalia-k.97@mail.ru     |   Аналитик данных    |
+| Сергеев Владимир |        vvsergeev87@gmail.com    |    Технический писатель |
+| Архипов Д.А.  | arkhipov.danil2015@gmail.com   |     Data scientist |
+
+
+## Описание датасета
 Таблицы
 
-train_labels.csv:
+### train_labels.csv:
 - «user_id» - id пользователя;
 - «target» - пол пользователя (1 / 0).
  
-train.csv, test.csv;
+### train.csv, test.csv;
 - «request_ts» - server timestamp of request;
 - «user_id» - id пользователя (см. п.1);
 - «referer» - url, где показывается реклама. В данном случае захэшировано 2 части url:
@@ -29,11 +37,11 @@ train.csv, test.csv;
 - «geo_id» - id geo;
 - «user_agent» - строка user_agent.
  
-referer_vectors.csv:
+### referer_vectors.csv:
 - «component0» - … - «component9» - числа, которые несут в себе информацию о url. Их нельзя как-либо интерпретировать;
 - «referer» - url, где показывается реклама (см. п.2).
  
-geo_info.csv:
+### geo_info.csv:
 - «geo_id» - id geo (см. п.2);
 - «country_id» - id страны;
 - «region_id» - id региона;
